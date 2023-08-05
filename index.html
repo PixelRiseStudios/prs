@@ -19,26 +19,26 @@
     }
 
     .company {
-      width: 300px;
-      height: 300px;
+      width: 270px;
+      height: 270px;   
       background-color: transparent;
       border: 2px solid transparent;
-      padding-top: 20px;
-      padding-bottom: 15px;
-    }
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }  
     .companylogo {
       width: 250px;
       height: 250px;
       border: 1px solid transparent;
     }
     h1 {
-  margin: 15px 0 5px;
-  font-size: 48px;
-  background-image: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  margin-top: 20px;
+     margin: 15px 0 5px;
+     font-size: 48px;
+    background-image: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 20px;
 }
 
 /* Define your custom colors here */
@@ -51,6 +51,17 @@
     .emoji {
       font-size: 80px;
       margin-bottom: 40px;
+    }
+    .under {
+      font-size: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+      line-height: 1.6;
+      color: #ffffff; /* Set text color to white */
+      background: linear-gradient(45deg, #e592be, #f9cf80, #6a9bcc, #407140);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
 
     .description {
@@ -126,11 +137,17 @@
     /* Responsive Styling */
     @media screen and (max-width: 768px) {
       .company {
-      width: 230px;
-      height: 200px;
+      width: 190px;
+      height: 190px;
+    }
+    h1 {
+      font-size: 30px;
     }
       .emoji {
         font-size: 60px;
+      }
+      .under {
+      font-size: 25px;
       }
 
       .description {
@@ -140,6 +157,14 @@
       .countdown {
         font-size: 24px;
       }
+      .social-buttons a {
+        width: 30px;
+        height: 30px;
+      }
+      .logos {
+        width: 29px;
+        height: 29px;
+    }
     }
 
     @media screen and (max-width: 480px) {
@@ -147,8 +172,14 @@
       width: 150px;
       height: 150px;
     }
+    h1 {
+      font-size: 30px;
+    }
       .emoji {
         font-size: 40px;
+      }
+      .under {
+      font-size: 25px;
       }
 
       .description {
@@ -158,6 +189,14 @@
       .countdown {
         font-size: 20px;
       }
+      .social-buttons a {
+        width: 30px;
+        height: 30px;
+      }
+      .logos {
+        width: 29px;
+        height: 29px;
+    }
     }
   </style>
 </head>
@@ -165,9 +204,10 @@
   <div class="company"><img class="company logo" src="image/logofor_web(pixelrise).png" alt="company logo"></div>
   <h1 class="logo">Pixel Rise Studios</h1>
   <div class="emoji">🚧</div>
-  <div class="description">
-    Welcome to Pixel Rise Studios! We are a web, app, graphic, and video editing company with a passion for creating stunning digital experiences. Our team of skilled professionals is working hard to bring you the best in design and technology. Stay tuned for our upcoming website, where you'll find a showcase of our projects and the services we offer. We can't wait to elevate your digital presence! 😊🚀
-  </div>
+  <div class="under"><b>We Are Under Construction</b></div>
+  <div class="description">  Welcome to Pixel Rise Studios, your one-stop destination for all things digital. As a leading web development, app development, graphic design, and online marketing company, we are dedicated to turning your visions into reality. Our talented team of professionals is passionate about creating visually stunning and functional solutions that captivate audiences and drive business growth.</div>
+  <div class="description"> With a focus on innovation and a commitment to excellence, we thrive on delivering top-notch results for our clients. From crafting immersive websites and user-friendly apps to designing captivating graphics and implementing data-driven online marketing strategies, we have the expertise to take your online presence to new heights.</div>
+  <div class="description"> At Pixel Rise Studios, we believe in the power of collaboration and open-source contributions. Join us on this exciting journey as we harness the potential of technology to empower your digital dreams. Let's build a brighter future together! 💻🎨📱🚀</div>
   <div class="countdown" id="countdown">
     <span class="countdown-item" id="days">00 D</span>
     <span class="countdown-item" id="hours">00 H</span>
@@ -177,13 +217,13 @@
 
   <!-- Social Media Buttons -->
   <div class="social-buttons">
-    <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank" rel="noopener noreferrer"> 
+    <a href="https://wa.me/9461233008?text=Hello%2C%20I%20have%20any%20question%20about%20your%20Social%20media%20services" target="_blank" rel="noopener noreferrer"> 
       <img class="logos" src="image/whatsapp.png" alt="WhatsApp">
     </a>
-    <a href="mailto:your_email@example.com" target="_blank" rel="noopener noreferrer"> 
+    <a href="mailto:pixelrisestudios@gmail.com" target="_blank" rel="noopener noreferrer"> 
       <img class="logos" src="image/email.svg" alt="Gmail">
     </a>
-    <a href="https://www.instagram.com/your_username/" target="_blank" rel="noopener noreferrer"> 
+    <a href="https://www.instagram.com/pixel_rise_studios/" target="_blank" rel="noopener noreferrer"> 
       <img class="logos" src="image/Instagram_logo_2016.svg.png" alt="Instagram">
     </a>
   </div>
