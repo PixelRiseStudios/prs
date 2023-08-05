@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under Construction - Pixel Rise Studios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #050303;
+      color: #333333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .company {
+      width: 300px;
+      height: 300px;
+      background-color: transparent;
+      border: 2px solid transparent;
+      padding-top: 20px;
+      padding-bottom: 15px;
+    }
+    .companylogo {
+      width: 250px;
+      height: 250px;
+      border: 1px solid transparent;
+    }
+    h1 {
+  margin: 15px 0 5px;
+  font-size: 48px;
+  background-image: linear-gradient(45deg, var(--gradient-color-1), var(--gradient-color-2));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 20px;
+}
+
+/* Define your custom colors here */
+:root {
+  --gradient-color-1: #e74c3c;
+  --gradient-color-2: #3498db;
+}
+
+
+    .emoji {
+      font-size: 80px;
+      margin-bottom: 40px;
+    }
+
+    .description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 80%;
+  text-align: center;
+  line-height: 1.6;
+  color: #ffffff; /* Set text color to white */
+  background: linear-gradient(45deg, #ff1493, #ffa500, #1e90ff, #32cd32);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+    .countdown {
+      font-size: 32px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #ffd000;
+      letter-spacing: 1px;
+      background-color: rgb(75, 68, 68);
+      padding: 10px 20px;
+      border-radius: 6px;
+      backdrop-filter: blur(8px);
+      display: flex;
+    }
+
+    .countdown-item {
+      margin: 0 15px;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-buttons a {
+      display: inline-block;
+      margin: 0 10px;
+      width: 48px;
+      height: 48px;
+      border-radius: 1  0%;
+      background-color: transparent;
+      line-height: 48px;
+      color: #ffffff;
+      text-align: center;
+      font-size: 24px;
+      text-decoration: none;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .logos {
+        width: 48px;
+        height: 48px;
+        border: 1px solid transparent;
+
+    }
+
+    .social-buttons a:hover {
+      background-color: #f0d3d3;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    /* Responsive Styling */
+    @media screen and (max-width: 768px) {
+      .company {
+      width: 230px;
+      height: 200px;
+    }
+      .emoji {
+        font-size: 60px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      .countdown {
+        font-size: 24px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .company {
+      width: 150px;
+      height: 150px;
+    }
+      .emoji {
+        font-size: 40px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+
+      .countdown {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="company"><img class="company logo" src="image/logofor_web(pixelrise).png" alt="company logo"></div>
+  <h1 class="logo">Pixel Rise Studios</h1>
+  <div class="emoji">🚧</div>
+  <div class="description">
+    Welcome to Pixel Rise Studios! We are a web, app, graphic, and video editing company with a passion for creating stunning digital experiences. Our team of skilled professionals is working hard to bring you the best in design and technology. Stay tuned for our upcoming website, where you'll find a showcase of our projects and the services we offer. We can't wait to elevate your digital presence! 😊🚀
+  </div>
+  <div class="countdown" id="countdown">
+    <span class="countdown-item" id="days">00 D</span>
+    <span class="countdown-item" id="hours">00 H</span>
+    <span class="countdown-item" id="minutes">00 M</span>
+    <span class="countdown-item" id="seconds">00 S</span>
+  </div>
+
+  <!-- Social Media Buttons -->
+  <div class="social-buttons">
+    <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank" rel="noopener noreferrer"> 
+      <img class="logos" src="image/whatsapp.png" alt="WhatsApp">
+    </a>
+    <a href="mailto:your_email@example.com" target="_blank" rel="noopener noreferrer"> 
+      <img class="logos" src="image/email.svg" alt="Gmail">
+    </a>
+    <a href="https://www.instagram.com/your_username/" target="_blank" rel="noopener noreferrer"> 
+      <img class="logos" src="image/Instagram_logo_2016.svg.png" alt="Instagram">
+    </a>
+  </div>
+
+  <script>
+    // Set the launch date (31 August 2023)
+    const launchDate = new Date('August 31, 2023 00:00:00').getTime();
+
+    // Update the countdown every second
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = launchDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById('days').innerText = ('0' + days).slice(-2) + ' D';
+      document.getElementById('hours').innerText = ('0' + hours).slice(-2) + ' H';
+      document.getElementById('minutes').innerText = ('0' + minutes).slice(-2) + ' M';
+      document.getElementById('seconds').innerText = ('0' + seconds).slice(-2) + ' S';
+    }, 1000);
+  </script>
+</body>
+</html>
