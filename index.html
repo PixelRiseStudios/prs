@@ -215,6 +215,25 @@
         height: 29px;
     }
     }
+    .contact-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom, #007bff, #0056b3);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+}
+
+.contact-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
   </style>
 </head>
 <body>
@@ -231,6 +250,7 @@
     <span class="countdown-item" id="minutes">00 M</span>
     <span class="countdown-item" id="seconds">00 S</span>
   </div>
+<a href="contact-us.html" class="contact-button">Contact Us</a>
 
   <!-- Social Media Buttons -->
   <div class="social-buttons">
